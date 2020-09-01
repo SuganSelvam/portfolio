@@ -151,6 +151,7 @@ a {
 
 .cardholder {
   display: flex;
+  justify-content: space-evenly;
   text-align: center;
   padding: 20px;
 }
@@ -182,8 +183,8 @@ a {
 }
 
 .cimg {
-  width: 50%;
-  height: 50%;
+  width: 250px;
+  height: 250px;
   border-radius: 20px;
   border: 1px solid grey;
   padding: 5px;
@@ -313,9 +314,7 @@ margin-bottom: 10px;
   flex-flow: row;
   justify-content: center;
 }
-.heading{
 
-}
 .subheading{
 text-transform: capitalize;
 }

@@ -31,8 +31,20 @@ function pst(){
     },11000)
 }
 
-function contact(){
+
+const scriptURL ="https://script.google.com/macros/s/AKfycbwoJ0lMOlNaCp0_wpzkcutISBL6FM16QGEIQg8J2cuPGOJO8HY/exec"
+const form = document.forms['submit-to-google-sheet']
+
+
+function contact(e){
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     console.log(name,email)
+
+
 }
+
