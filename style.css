@@ -322,3 +322,37 @@ text-transform: capitalize;
   font-size: 18px;
   font-weight: bold;
 }
+
+@media only screen and (max-width: 600px) {
+  .nav{
+    display: none;
+  }
+  .contentMain, .cardholder, .skilltab{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .temp{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cbtn1{
+    margin: 5px auto;
+  }
+
+   #email, #name{
+     margin:10px 0 ;
+   }
+
+   label{
+     font-size: large;
+     color: #f90;
+     font-weight: bold;
+   }
+   svg{
+     width: 50%;
+   }
+
+}

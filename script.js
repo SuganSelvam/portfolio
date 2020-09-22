@@ -2,7 +2,6 @@ var disp = 0;
 function oops(){
     disp ++;
     if(disp%2!=0){
-        // var tag = ""
         document.getElementById("oops").innerHTML="Future Projects are yet to be updated . Keep in touch or  <a class='oopslink' href='#contact'>subscribe</a>  for updates"
     }
     else{
